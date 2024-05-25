@@ -1,0 +1,67 @@
+
+body{
+    background-color: #009688 ;
+    font-family :'Droid' Serif
+}
+
+.container{
+    width: 303px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background:#aaa;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.container div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 67px;
+    gap: 3px;
+    padding: 2px;
+}
+.container div button {
+    border-radius: 8px;
+    color: white;
+     background: hsl(231, 85%, 46%, 1);
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.container div button:hover{
+    background: hsl(231, 85%, 46%, 0.80);
+}
+
+.container .output{
+    background-color: #eee;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    font-size: 27px;
+    font-weight: bolder;
+    color: black;
+    align-items: center;
+}
+.container div .operator{
+   background-color:  hsl(0, 0%, 0%, 1);
+   transition: 0.3s;
+}
+.container div .operator:hover{
+    background: hsl(0, 0%, 0%, 0.8);
+}
+
+.container .lastdiv {
+display: flex;
+}
+.container .lastdiv button{
+   flex:1;
+    }
+    .container .firstdiv {
+        display: flex;
+        }  
+ .container .firstdiv button{
+   flex:1;
+   }
